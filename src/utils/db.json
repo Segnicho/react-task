@@ -1,0 +1,75 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Nike Model-1",
+      "desc": "The Best shoes on the market rn.",
+      "price": 100,
+      "photo": "",
+      "ratings": 4
+    },
+    {
+      "id": 2,
+      "name": "Adidas Ultraboost",
+      "desc": "The Ultimate Running Shoes.",
+      "price": 120,
+      "photo": "",
+      "ratings": 5
+    },
+    {
+      "id": 3,
+      "name": "Puma Ignite",
+      "desc": "Stylish and Comfortable.",
+      "price": 90,
+      "photo": "",
+      "ratings": 3
+    },
+    {
+      "id": 4,
+      "name": "New Balance Fresh Foam",
+      "desc": "Perfect for Long Walks.",
+      "price": 110,
+      "photo": "",
+      "ratings": 4
+    },
+    {
+      "id": 5,
+      "name": "Reebok Classic",
+      "desc": "The Timeless Classic.",
+      "price": 80,
+      "photo": "",
+      "ratings": 3
+    },
+    {
+      "id": 6,
+      "name": "Under Armour Charged",
+      "desc": "Optimized for Performance.",
+      "price": 95,
+      "photo": "",
+      "ratings": 4
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "productId": 1,
+      "userEmail": "segni@gmail.com",
+      "status": "pending",
+      "price": 20
+    }
+  ],
+  "signup": [
+    {
+      "id": 1,
+      "email": "segni@gmail.com",
+      "firstname": "Segni",
+      "password": "segni"
+    }
+  ],
+  "login": [
+    {
+      "email": "segni@gmail.com",
+      "password": "Segni"
+    }
+  ]
+}
