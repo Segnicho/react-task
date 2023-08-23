@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useAuth } from "../hooks/useAuth";
 const navBarItems = [
   { title: "Home", path: "/" },
   { title: "About", path: "/about" },
@@ -7,6 +8,7 @@ const navBarItems = [
 ];
 
 const Navbar = () => {
+  const {user} = useAuth()
   return (
     <div className="navbar bg-base-100 shadow-sm mb-2">
       <div className="navbar-start">
@@ -55,12 +57,16 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end space-x-2">
-        <Link to="/signup" className="btn btn-primary">
-          Register
-        </Link>
-        <Link to="/login" className="btn btn-primary">
-          Login
-        </Link>
+        {!user && (
+          <>
+            <Link to="/signup" className="btn btn-primary">
+              Register
+            </Link>
+            <Link to="/login" className="btn btn-primary">
+              Login
+            </Link>
+          </>
+        )}
       </div>
     </div>
   );

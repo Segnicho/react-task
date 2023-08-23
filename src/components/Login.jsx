@@ -7,9 +7,7 @@ import { useAuth } from "../hooks/useAuth";
 import { toast } from "react-toastify";
 import { AuthContext } from "../context/AuthContext";
 export default function Login() {
-  
   const { login } = useAuth();
-  // const { login } = useContext(AuthContext);
 
   const [user, setUser] = useState({ email: "", password: "" });
 
@@ -17,11 +15,19 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      console.log("user: ", user);
-      login(user)
+      await login({
+        email: user.email,
+        password: user.password,
+      });
+      toast.success("Logged in successfully");
       navigate("/");
     } catch (err) {
-      toast.error("Oops! Something went wrong")
+      toast.error("Oops! Something went wrong");
+    } finally {
+      setUser({
+        email: "",
+        password: "",
+      });
     }
   };
 
@@ -61,7 +67,10 @@ export default function Login() {
           onChange={handleChange}
           placeholder="password"
         />
-        <button type="submit" className="mt-10  p-3 text-white rounded-[10px] btn btn-primary">
+        <button
+          type="submit"
+          className="mt-10  p-3 text-white rounded-[10px] btn btn-primary"
+        >
           LOGIN
         </button>
         <Link

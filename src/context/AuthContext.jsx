@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState } from "react";
 import { clientInstance } from "../utils/axios";
+import { toast } from "react-toastify";
 
 export const AuthContext = createContext();
 
@@ -8,18 +9,24 @@ export const AuthProvider = ({ children }) => {
 
   const register = async (userData) => {
     try {
-      const response = await clientInstance.post("/users", userData);
-      setUser(response.data.user);
+      console.log("user: ", userData )
+      const response = await clientInstance.post("/signup", userData);
+      setUser(response);
+
     } catch (error) {
-      console.error("Registration error:", error);
+      toast.error("OOPS Something went wrong")
     }
   };
 
   const login = async (userData) => {
+
     try {
-      const response = await clientInstance.post("/login", userData);
+      const response = await clientInstance.post(
+        "/login",
+        userData
+      );
       console.log("response", response);
-      setUser(response.data.user);
+      setUser(response);
     } catch (error) {
       console.error("Login error:", error);
     }
