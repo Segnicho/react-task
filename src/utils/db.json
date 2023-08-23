@@ -64,80 +64,15 @@
       "email": "segni@gmail.com",
       "firstname": "Segni",
       "password": "segni"
-    },
-    {
-      "firstname": "sany",
-      "email": "sany@gmail.com",
-      "password": "sany",
-      "id": 2
-    },
-    {
-      "firstname": "sanyii",
-      "email": "sanyii@gmail.com",
-      "password": "sanyii",
-      "id": 3
-    },
-    {
-      "firstname": "sagn",
-      "email": "sagn@gmail.com",
-      "password": "sagni",
-      "id": 4
-    },
-    {
-      "firstname": "jeb",
-      "email": "jeb@gmail.com",
-      "password": "jeb",
-      "id": 5
-    },
-    {
-      "firstname": "sss",
-      "email": "sss@gmail.com",
-      "password": "ssss",
-      "id": 6
-    },
-    {
-      "firstname": "ss",
-      "email": "ss@gmail.com",
-      "password": "ss",
-      "id": 7
-    },
-    {
-      "firstname": "jj",
-      "email": "jj@gmail.com",
-      "password": "jj",
-      "id": 8
     }
+    
   ],
   "login": [
     {
       "id": 1,
       "email": "segni@gmail.com",
       "password": "Segni"
-    },
-    {
-      "email": "sany@gmail.com",
-      "password": "sany",
-      "id": 2
-    },
-    {
-      "email": "san@gmail.com",
-      "password": "sa ",
-      "id": 3
-    },
-    {
-      "email": "sany@gmail.com",
-      "password": "sany",
-      "id": 4
-    },
-    {
-      "email": "ss@gmail.com",
-      "password": "ss",
-      "id": 5
-    },
-    {
-      "email": "bb@gmail.com",
-      "password": "bb",
-      "id": 6
     }
+    
   ]
 }

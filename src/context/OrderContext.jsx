@@ -27,7 +27,7 @@ export const OrderProvider = ({ children }) => {
 
     try {
       const orderData = {
-        userId: user.email,
+        userEmail: user.email,
         productId,
         price,
         status: 'pending'
